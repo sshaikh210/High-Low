@@ -1,11 +1,15 @@
  <?php
-
- $target = rand(1, 100);
+ $min = $argv[1];
+ $max = $argv[2];
+ $target = rand($min, $max);
  $tries = 0;
  
  do {
-	// Write the output
-	// Notice the space after the ?
+ 	var_dump($argc);
+ 	if ($argc<2) {
+ 		$min == 1;
+ 		$max == 50;
+ 	}
 	fwrite(STDOUT, 'Guess the random number! ');
 
 	// Get the input from user
@@ -19,7 +23,7 @@
 		fwrite(STDOUT, "Too High!\n" . PHP_EOL);
 	}
 	$tries++;
-} while ($guess != $target) 
+} while ($guess != $target);
 echo "It took you $tries number of attempts to guess the number" . PHP_EOL;
 exit(0);
 

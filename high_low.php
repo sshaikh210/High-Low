@@ -1,16 +1,25 @@
  <?php
+ if ($argc < 3) {
+ 	die("Please enter a range" . PHP_EOL);
+ }
  $min = $argv[1];
  $max = $argv[2];
+ if ($argv[1] > $argv[2]) {
+ 	$min = $argv[2];
+ 	$max = $argv[1];
+ }
+ if ((!is_numeric($min) || (!is_numeric($max)))); {
+ 	die("Please enter only numbers" . PHP_EOL);
+ } 
  $target = rand($min, $max);
  $tries = 0;
- 
  do {
  	var_dump($argc);
  	if ($argc<2) {
  		$min == 1;
  		$max == 50;
  	}
-	fwrite(STDOUT, 'Guess the random number! ');
+	fwrite(STDOUT, 'Guess the random number between $min and $max! ');
 
 	// Get the input from user
 	$guess = trim(fgets(STDIN));

@@ -33,3 +33,18 @@ switch($dayOfWeek) {
         echo "Sunday";
         break;
 }
+if ($dayOfWeek == 1) {
+    echo "Monday";
+} else if ($dayOfWeek == 2) {
+    echo "Tuesday;"
+} else if ($dayOfWeek == 3) {
+    echo "Wednesday";
+} else if ($dayOfWeek == 4) {
+    echo "Thursday";
+} else if ($dayOfWeek == 5) {
+    echo "Friday";
+} else if ($dayOfWeek == 6) {
+    echo "Saturday";
+} else if ($dayOfWeek == 7) {
+    echo "Sunday";
+}

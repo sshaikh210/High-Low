@@ -1,14 +1,11 @@
 <?php
-for ($i = 0; $i <= 100; $i++) {
-    echo $i . "\n";
-    if ($i % 3 == 0) {
-        continue;
-    }
-    echo "^ that is an even number.\n";
-    for ($i = 1; $i <= 100; $i++) {
-        if ($i == 1) {
-            echo "{$i}\n";
-            break 10;
-        }
+$a = 5;
+$b = 4;
+function add($a, $b) {
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a + $b;
+    } else {
+        return "ERROR: Both arguments must be numbers\n";
     }
 }
+	echo add($a, $b) . PHP_EOL;

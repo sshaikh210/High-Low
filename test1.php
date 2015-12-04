@@ -1,11 +1,12 @@
-<?php
-$a = 5;
-$b = 4;
-function add($a, $b) {
-    if (is_numeric($a) && is_numeric($b)) {
-        return $a + $b;
-    } else {
-        return "ERROR: Both arguments must be numbers\n";
-    }
-}
-	echo add($a, $b) . PHP_EOL;
+<?php  $messge - 'Hello Hamtpon!' ?>
+<DOCTYPE html>
+<html>
+<head>
+	<title>Hello Hammies</title>
+</head>
+<body>
+	<h1>My first HTML/PHP File!</h1>
+
+	echo $message;
+</body>
+</html>

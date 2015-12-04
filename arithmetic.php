@@ -36,7 +36,9 @@ function divide($a, $b) {
 }
 
 function modulus($a, $b) {
-	if (is_numeric($a) && is_numeric($b)){
+	if (b == 0) {
+		return "Error: You cannot divide by 0\n";
+	} elseif (is_numeric($a) && is_numeric($b)){
 		return $a % $b;
 	} else {
 		return errorMessage($a, $b);
